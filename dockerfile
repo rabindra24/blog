@@ -6,8 +6,8 @@ COPY package*.json ./
 
 RUN npm install 
 
-COPY next.config.js .sentryclirc app-pocketup-fr.json .env.local tsconfig.json sentry.* ./
-COPY tailwind.config.js ecosystem.config.js postcss.config.js ./
+COPY next.config.js tsconfig.json  ./
+COPY tailwind.config.js postcss.config.js ./
 
 COPY . .
 
